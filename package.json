@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.31"
+  },
+  "name": "NLW-NodeJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/juliocesarrodriguespiau/NLW-NodeJS.git",
+  "author": "Júlio César Rodrigues Piau <39218054+juliocesarrodriguespiau@users.noreply.github.com>",
+  "license": "MIT"
+}

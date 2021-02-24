@@ -1,4 +1,7 @@
+import 'reflect-metadata'
 import express, { request, response } from 'express';
+//import express from "express";
+import "./database";
 
 const app = express();
 
@@ -13,7 +16,7 @@ const app = express();
 // http://localhost:3333/users
 app.get("/users", (request, response) => {
     return response.json({
-        message: "Hello Word - NLW#04"
+        message: "Hello Word!!!!! - NLW#04"
     });
 })
 
@@ -23,7 +26,7 @@ app.get("/users", (request, response) => {
 app.post("/", (request, response) => {
     // recebi os dados para salvar
     return response.json({
-        message: "Os dados foram salvos com Sucesso!!!"
+        message: "## Os dados foram salvos com Sucesso!!!"
     });  
 })
 
