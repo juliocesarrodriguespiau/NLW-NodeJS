@@ -1,4 +1,4 @@
-import 'reflect-metadata'
+import 'reflect-metadata';
 import express, { request, response } from 'express';
 //import express from "express";
 import "./database";
@@ -30,5 +30,5 @@ app.post("/", (request, response) => {
     });  
 })
 
-app.listen(3333, () => console.log("Server is running!!!"));
+app.listen(3333, () => console.log("SERVER IS RUNNING!!!"));
 
