@@ -4,13 +4,18 @@ import { User } from "../models/User";
 
 class UserController {
     async create(request: Request, response: Response) {
-        const body = request.body;
+        const { name, email } = request.body;
         
         const usersRepository = getRepository(User);
 
-        usersRepository.
+        const user = usersRepository.create({
+            name, 
+            email,
+        });
 
-        return response.send();
+        await usersRepository.save(user);
+
+        return response.json(user);
     }
 }
-export { UserController }
+export { UserController };

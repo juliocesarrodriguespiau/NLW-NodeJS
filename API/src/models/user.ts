@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
 @Entity("users")
@@ -13,7 +13,7 @@ class User {
     @Column()
     email: string;
 
-    @Column()
+    @CreateDateColumn()
     created_at: Date;
 
     constructor() {
@@ -23,4 +23,4 @@ class User {
     }
 }
 
-export { User }
+export { User };
