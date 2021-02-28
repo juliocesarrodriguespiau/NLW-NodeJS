@@ -1,5 +1,5 @@
-import { getCustomRepository, RepositoryNotTreeError } from "typeorm";
-import { Survey } from "../models/Survey";
+import { Request, Response} from "express";
+import { getCustomRepository } from "typeorm";
 import { SurveysRepository } from "../repositories/SurveysRepository";
 
 class SurveysController {
